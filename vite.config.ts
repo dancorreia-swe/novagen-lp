@@ -5,6 +5,7 @@ import tsconfigPaths from "vite-tsconfig-paths";
 export default defineConfig({
   plugins: [
     remix({
+      basename: "novagen-lp",
       ssr: false,
       future: {
         v3_fetcherPersist: true,
