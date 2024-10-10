@@ -41,9 +41,9 @@ export default function HoverableCard({
       <div
         className={cn(
           "overflow-hidden relative card h-96 rounded-xl shadow-xl max-w-sm mx-auto flex flex-col justify-end p-4 bg-cover",
-          imgBackground === "zombie" && `bg-[url(app/images/zombies.jpg)]`,
-          imgBackground === "survival" && `bg-[url(app/images/open-world.jpg)]`,
-          imgBackground === "documents" && `bg-[url(app/images/documents.jpg)]`,
+          imgBackground === "zombie" && `bg-[url(/zombies.jpg)]`,
+          imgBackground === "survival" && `bg-[url(/open-world.jpg)]`,
+          imgBackground === "documents" && `bg-[url(/documents.jpg)]`,
           (bgPosition && bgPositions[bgPosition]) || "bg-center"
         )}
       >
