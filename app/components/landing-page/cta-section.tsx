@@ -4,10 +4,26 @@ import Pentagram from "~/images/pentagram.png";
 
 const CtaSection = () => {
   return (
-    <section className="w-full bg-red-700 mt-40 py-20">
+    <motion.section
+      className="w-full bg-red-700 mt-40 py-20"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{
+        delay: 0.3,
+        duration: 0.8,
+        ease: "easeInOut",
+      }}
+    >
       <motion.div className="container max-w-6xl mx-auto relative flex flex-col items-center justify-center text-center">
         <div className="flex flex-col items-center relative">
-          <img
+          <motion.img
+            animate={{ rotate: 360 }}
+            transition={{
+              repeat: Infinity,
+              duration: 5,
+              repeatDelay: 0,
+              ease: "linear",
+            }}
             src={Pentagram}
             alt="Pentagram"
             className="absolute top-12 rotate-2"
@@ -27,7 +43,7 @@ const CtaSection = () => {
           Garanta o seu
         </motion.button>
       </motion.div>
-    </section>
+    </motion.section>
   );
 };
 
