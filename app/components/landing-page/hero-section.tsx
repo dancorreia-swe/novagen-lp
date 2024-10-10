@@ -47,6 +47,7 @@ const HeroSection = () => {
           className="aspect-video w-full"
           src="https://www.youtube.com/embed/3-Y1cnxPOvM"
           height={280}
+          allowFullScreen
         ></iframe>
       </motion.div>
       <motion.button
