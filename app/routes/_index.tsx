@@ -1,6 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
 import CardSection from "~/components/landing-page/card-section";
 import CtaSection from "~/components/landing-page/cta-section";
+import Footer from "~/components/landing-page/footer";
 import HeroSection from "~/components/landing-page/hero-section";
 import Navbar from "~/components/landing-page/navbar";
 
@@ -21,6 +22,7 @@ export default function Index() {
       <HeroSection />
       <CardSection />
       <CtaSection />
+      <Footer />
     </>
   );
 }
