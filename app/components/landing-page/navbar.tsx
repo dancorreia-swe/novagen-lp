@@ -1,4 +1,4 @@
-import { Home, User, MessageCircle } from "lucide-react";
+import { Home, User, BookmarkCheck } from "lucide-react";
 import { FloatingNav } from "../ui/floating-navbar";
 
 const navItems = [
@@ -13,10 +13,10 @@ const navItems = [
     icon: <User className="h-4 w-4 text-neutral-500 dark:text-white" />,
   },
   {
-    name: "Contact",
-    link: "/contact",
+    name: "Garanta o seu",
+    link: "/#register",
     icon: (
-      <MessageCircle className="h-4 w-4 text-neutral-500 dark:text-white" />
+      <BookmarkCheck className="h-4 w-4 text-neutral-500 dark:text-white" />
     ),
   },
 ];

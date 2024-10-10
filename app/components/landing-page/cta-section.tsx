@@ -13,6 +13,7 @@ const CtaSection = () => {
         duration: 0.8,
         ease: "easeInOut",
       }}
+      id="register"
     >
       <motion.div className="container max-w-6xl mx-auto relative flex flex-col items-center justify-center text-center">
         <div className="flex flex-col items-center relative">
