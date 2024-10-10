@@ -3,20 +3,20 @@ import HoverableCard, { HoverableCardProps } from "../blocks/hoverable-card";
 
 const cards: HoverableCardProps[] = [
   {
-    imgBackground: "app/images/open-world.jpg",
+    imgBackground: "survival",
     label: "Mundo aberto",
     description:
       "Explore um mundo aberto, e esteja pronto para encontrar amigos e inimigos, armas e muitos zumbis.",
     bgPosition: "left",
   },
   {
-    imgBackground: "app/images/zombies.jpg",
+    imgBackground: "zombie",
     label: "Sobreviva",
     description:
       "Sobreviva tempo o suficiente para ver o que está do outro lado.",
   },
   {
-    imgBackground: "app/images/documents.jpg",
+    imgBackground: "documents",
     label: "Investigue",
     description:
       "Encontre pistas e descubra o que realmente aconteceu naquela noite.",

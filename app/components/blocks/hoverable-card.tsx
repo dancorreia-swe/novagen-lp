@@ -1,7 +1,7 @@
 import { cn } from "~/lib/utils";
 
 export type HoverableCardProps = {
-  imgBackground?: string;
+  imgBackground?: "zombie" | "survival" | "documents";
   label: string;
   bgPosition?: bgPositions;
   description: string;
@@ -40,9 +40,11 @@ export default function HoverableCard({
     <div className="max-w-xs w-full group/card">
       <div
         className={cn(
-          "overflow-hidden relative card h-96 rounded-xl shadow-xl max-w-sm mx-auto flex flex-col justify-end p-4",
-          imgBackground && `bg-[url("${imgBackground}")] bg-cover bg-center`,
-          bgPosition && bgPositions[bgPosition]
+          "overflow-hidden relative card h-96 rounded-xl shadow-xl max-w-sm mx-auto flex flex-col justify-end p-4 bg-cover",
+          imgBackground === "zombie" && `bg-[url(app/images/zombies.jpg)]`,
+          imgBackground === "survival" && `bg-[url(app/images/open-world.jpg)]`,
+          imgBackground === "documents" && `bg-[url(app/images/documents.jpg)]`,
+          (bgPosition && bgPositions[bgPosition]) || "bg-center"
         )}
       >
         <div className="absolute w-full h-full top-0 left-0 transition duration-300 group-hover/card:bg-black opacity-60"></div>
