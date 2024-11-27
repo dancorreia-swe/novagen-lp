@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { LampContainer } from "../ui/lamp";
 import { useState } from "react";
 import PentagramImg from "~/images/pentagram.svg";
+import { Link } from "@remix-run/react";
 
 const HeroSection = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -66,7 +67,16 @@ const HeroSection = () => {
         onMouseLeave={() => setIsHovered(false)}
         className="rounded bg-red-800 px-4 py-3 hover:bg-red-900 transition-colors text-white flex items-center gap-2"
       >
-        Garanta o seu agora
+        <Link
+          to={
+            "https://drive.google.com/uc?export=download&id=1DCRQhrblJH5Rl95c8QZtz0ihItHPVxte"
+          }
+          target="_blank"
+          rel="noreferrer"
+          download={true}
+        >
+          Baixe agora
+        </Link>
         <div className="relative size-6">
           <motion.img
             src={PentagramImg}

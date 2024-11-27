@@ -25,7 +25,7 @@ const cards: HoverableCardProps[] = [
 
 const CardSection = () => {
   return (
-    <div className="container max-w-6xl mt-24" id="cards">
+    <div className="container max-w-6xl" id="cards">
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 50 }}
